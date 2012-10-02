@@ -4,7 +4,7 @@ django-jsmetatemplates
 Template tag library for building building javascript templates using django templates
 
 
-Allows for javascript templates (like moustache.js ones) to be built using the inheritence
+Allows for javascript templates (like mustache.js ones) to be built using the inheritence
 and include functionality of django-templates before being rendered to the client.
 
 Gets around the problem of overlapping delimiters by using a different delimiter for javascript templates
