@@ -23,12 +23,12 @@ js\_template\_base.html:
 
 js\_template\_derivative.html:
 ```html
-{% extends 'js\_template\_base.html' %}
+{% extends 'js_template_base.html' %}
 
 {% block content %}
 <ul>
-	<li>{! thing\_one !}</li>
-	<li>{! thing\_two !}</li>
+	<li>{! thing_one !}</li>
+	<li>{! thing_two !}</li>
 </ul>
 {% endblock %}
 ```
@@ -37,17 +37,17 @@ page\_template.html:
 ```html
 {% load jsmetatemplate %}
 
-{% include\_ichtemplate "js\_template\_derivative.html" %}
+{% include_ichtemplate "js_template_derivative.html" %}
 ```
 
 page\_template.html will then render to:
 ```html
-<script type="text/html" id="js\_template\_derivative.html">
+<script type="text/html" id="js_template_derivative.html">
 <div>
 	<h1>{{ title }}</h1>
 	<ul>
-		<li>{{ thing\_one }}</li>
-		<li>{{ thing\_two }}</li>
+		<li>{{ thing_one }}</li>
+		<li>{{ thing_two }}</li>
 	</ul>
 </div>
 </script>
